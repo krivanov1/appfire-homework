@@ -26,3 +26,9 @@
 
 6. **Install the Jira app**  
    Use `{{yourBaseUrl}}/install` as your installation url
+
+6. **Install the Jira app**  
+   Use `{{yourBaseUrl}}/install` as your installation url
+
+7. **Install Chrome/Brave Plugin**  
+   Install ModHeader - Modify HTTP headers extension and add ngrok-skip-browser-warning with a value of 1, in order to skip ngrok warning
