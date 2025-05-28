@@ -1,0 +1,31 @@
+{
+    "key": "my-app",
+    "name": "Subtask Manager",
+    "description": "A simple app to manage subtasks in Jira",
+    "baseUrl": "{{yourBaseUrl}}",
+    "authentication": {
+        "type": "jwt"
+    },
+    "lifecycle": {
+        "installed": "/api/installed",
+        "uninstalled": "/api/uninstalled"
+    },
+    "scopes": [
+        "READ",
+        "WRITE"
+    ],
+    "apiMigrations":{
+        "signed-install": true,
+    },
+    "modules": {
+        "webPanels": [{
+            "key": "subtask-panel",
+            "location": "atl.jira.view.issue.left.context",
+            "name": {
+                "value": "Subtasks"
+            },
+            "url": "/subtasks"       
+        }]
+    }
+    
+}
